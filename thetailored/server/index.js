@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const clothesRoute = require('./routes/clothes');
 const userRoute = require('./routes/users');
+//const authRoutes = require('./routes/admin')
 // const authRoutes = require('./routes/auth');
 
 require('dotenv/config');
@@ -19,6 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 app.use( clothesRoute); 
 app.use(userRoute);
+//app.use(authRoutes);
 // app.use('/api/auth', authRoutes);
 //
 
@@ -26,6 +28,7 @@ app.use(userRoute);
 mongoose.connect(process.env.DB_CONNECTION, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    dbName: 'TheTailored'
 }).then(() => {
     console.log("Connected to the DB")
 })

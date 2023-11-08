@@ -1,0 +1,86 @@
+@import url(../App.css);
+
+
+.carousel {
+  display: flex;
+  //overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 500px;
+  overflow-x: hidden !important;
+
+
+  .slide {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    background-image: url("https://images.unsplash.com/photo-1522157904915-b8773f3a8f6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: -30vh -40vh;
+  }
+
+  .slideOne {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    // background-image: url("https://thefoschini.vtexassets.com/arquivos/ids/62923657-800-800?v=638245458212400000&width=800&height=800&aspect=true");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: -30vh -40vh;
+  }
+
+  .slideTwo {
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    // background-image: url("https://thefoschini.vtexassets.com/arquivos/ids/66617745-800-800?v=638259648980670000&width=800&height=800&aspect=true");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: -30vh -40vh;
+  }
+
+  .bigText{
+    font-size: 180px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+  }
+}
+
+.dotsContainer {
+  display: flex;
+  justify-content: right;
+  margin-top: -60px;
+  margin-right: 60px;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  padding: 0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.dot.active {
+  background-color: gray;
+}
+
+h2{
+  color: black;
+}
