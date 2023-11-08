@@ -1,12 +1,12 @@
 /* this messes with the whole home page and other site structuring so avoid using the body tag  */
 /* body is already used in Index.css  */
-body {
+/* body { */
   /* display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0; */
-}
+
 
 h2 {
   font-family: 'Montserrat', sans-serif; /* Use 'Montserrat' font for h2 element */
